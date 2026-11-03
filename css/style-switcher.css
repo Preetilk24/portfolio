@@ -1,0 +1,186 @@
+
+/* 1. Backdrop Overlay */
+.theme-panel-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-smooth, all 0.3s ease);
+}
+
+.theme-panel-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 2. Floating Theme Settings Panel */
+.theme-panel {
+  position: fixed;
+  top: 86px;
+  right: 28px;
+  width: 290px;
+  background: #191B23;
+  color: #F5F6FB;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md, 14px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  padding: 22px;
+  z-index: 201;
+  transform: translateY(-12px) scale(0.96);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-spring, all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275));
+}
+
+.theme-panel.open {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 3. Panel Header & Close Button */
+.theme-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.theme-panel-title {
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #F5F6FB;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.theme-panel-close {
+  color: #A5A9B8;
+  font-size: 1.3rem;
+  line-height: 1;
+  padding: 4px;
+  border-radius: 6px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth, all 0.3s ease);
+}
+
+.theme-panel-close:hover {
+  color: #FFFFFF;
+}
+
+.theme-section-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #A5A9B8;
+  margin-bottom: 12px;
+}
+
+/* 4. Accent Color Swatches Grid */
+.swatches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.swatch-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 4px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #20232D;
+  transition: var(--transition-smooth, all 0.3s ease);
+  cursor: pointer;
+}
+
+.swatch-btn:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.swatch-btn.active {
+  border-color: var(--accent);
+  background: rgba(var(--accent-rgb), 0.15);
+  box-shadow: 0 0 14px var(--accent-glow, rgba(var(--accent-rgb), 0.28));
+}
+
+.swatch-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2.5px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease;
+}
+
+.swatch-btn:hover .swatch-circle {
+  transform: scale(1.1);
+}
+
+.swatch-name {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #F5F6FB;
+}
+
+/* 5. Light / Dark Appearance Mode Switcher */
+.mode-switch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: #20232D;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.mode-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #A5A9B8;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-smooth, all 0.3s ease);
+}
+
+.mode-btn:hover {
+  color: #FFFFFF;
+}
+
+.mode-btn.active {
+  background: #191B23;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 6. Responsive Mobile Overrides */
+@media (max-width: 480px) {
+  .theme-panel {
+    right: 14px;
+    left: 14px;
+    width: auto;
+  }
+}
+

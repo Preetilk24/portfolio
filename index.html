@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" data-accent="blue">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preeti Kadrolli | Associate Software Engineer & Full Stack Developer</title>
+
+  <!-- SEO & Meta Tags -->
+  <meta name="description"
+    content="Personal portfolio of Preeti Kadrolli — Associate Software Engineer with experience in C#, .NET Core, SQL Server, JavaScript, React, backend APIs, and enterprise integrations.">
+  <meta name="keywords"
+    content="Preeti Kadrolli, Software Engineer, Associate Software Engineer, Full Stack Developer, Backend Developer, .NET Core, C#, React, SQL Server, Bengaluru, Solera India">
+  <meta name="author" content="Preeti Kadrolli">
+  <meta property="og:title" content="Preeti Kadrolli | Associate Software Engineer">
+  <meta property="og:description"
+    content="Software Engineer with experience in building web applications, backend APIs, and full-stack solutions.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon with PK Monogram -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23101116'/><text x='50' y='64' font-family='sans-serif' font-size='44' font-weight='900' fill='%2370AEF5' text-anchor='middle'>PK</text></svg>">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-switcher.css">
+
+  <!-- Typed.js CDN for typing animation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Ambient Glow Background Mesh -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-container">
+      <!-- PK Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Preeti Kadrolli Home">
+        <div class="logo-badge">PK</div>
+        <span class="brand-text">Preeti Kadrolli</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme settings & Quick mode switch) -->
+      <div class="nav-actions">
+        <!-- Theme Customizer Gear Button -->
+        <button type="button" class="icon-btn" id="theme-settings-toggle" title="Customize Theme Colors"
+          aria-label="Theme Customization Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path
+              d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+            </path>
+          </svg>
+        </button>
+
+        <!-- Quick Light/Dark Toggle -->
+        <button type="button" class="icon-btn" id="quick-theme-toggle" title="Toggle Light/Dark Theme"
+          aria-label="Toggle Light and Dark Mode">
+          <svg id="theme-icon-sun" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg id="theme-icon-moon" class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-toggle" aria-label="Toggle navigation menu"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Work Experience</a></li>
+        <li><a href="#education" class="mobile-nav-link">Education</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       THEME CUSTOMIZATION FLOATING PANEL
+       ========================================================================== -->
+  <div class="theme-panel-overlay" id="theme-panel-overlay"></div>
+  <aside class="theme-panel" id="theme-panel" aria-label="Theme Customization">
+    <div class="theme-panel-header">
+      <div class="theme-panel-title">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path
+            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+          </path>
+        </svg>
+        Theme Colors
+      </div>
+      <button type="button" class="theme-panel-close" id="theme-panel-close"
+        aria-label="Close settings">&times;</button>
+    </div>
+
+    <!-- Accent Color Swatches -->
+    <div class="theme-section-label">Accent Colors</div>
+    <div class="swatches-grid">
+      <!-- Blue Swatch (#70AEF5) -->
+      <button type="button" class="swatch-btn active" data-accent-color="blue" id="swatch-blue"
+        title="Blue Accent (#70AEF5)">
+        <div class="swatch-circle" style="background: #70AEF5;"></div>
+        <span class="swatch-name">Blue</span>
+      </button>
+
+      <!-- Purple Swatch (#B044ED) -->
+      <button type="button" class="swatch-btn" data-accent-color="purple" id="swatch-purple"
+        title="Purple Accent (#B044ED)">
+        <div class="swatch-circle" style="background: #B044ED;"></div>
+        <span class="swatch-name">Purple</span>
+      </button>
+
+      <!-- Pink Swatch (#F044A8) -->
+      <button type="button" class="swatch-btn" data-accent-color="pink" id="swatch-pink" title="Pink Accent (#F044A8)">
+        <div class="swatch-circle" style="background: #F044A8;"></div>
+        <span class="swatch-name">Pink</span>
+      </button>
+    </div>
+
+    <!-- Appearance Mode Switcher -->
+    <div class="theme-section-label">Appearance</div>
+    <div class="mode-switch-grid">
+      <button type="button" class="mode-btn active" data-theme-mode="dark" id="btn-theme-dark">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        Dark
+      </button>
+      <button type="button" class="mode-btn" data-theme-mode="light" id="btn-theme-light">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        Light
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       PAGE 1 — HERO / LANDING SECTION
+       ========================================================================== -->
+  <main>
+    <section class="section hero-section" id="hero">
+      <div class="container hero-grid">
+        <!-- Hero Left: Info & Introduction -->
+        <div class="hero-content fade-up in-view">
+          <!-- Availability Badge -->
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for New Engineering Opportunities</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-name">Preeti Kadrolli</span>.
+          </h1>
+
+          <!-- Animated Typing Designations -->
+          <div class="hero-designations">
+            <span class="typing-lead">I am into </span>
+            <span class="typing"></span>
+          </div>
+
+          <!-- Exact Introduction Paragraph -->
+          <p class="hero-intro">
+            Hello, my name is Preeti Kadrolli. I am a passionate Software Developer with experience in building web
+            applications, backend APIs, and full-stack solutions. I enjoy learning new technologies, solving problems,
+            and creating user-friendly and efficient software solutions.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="hero-ctas">
+            <a href="#about" class="btn btn-secondary">
+              <span>Learn More About Me</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-primary btn-shimmer hire-me" data-section-index="contact">
+              <span>Hire Me / Get In Touch</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+            <a href="/Preeti_Kadrolli_Resume.pdf" download="Preeti_Kadrolli_Resume.pdf"
+              class="btn btn-secondary btn-resume" title="Download Preeti Kadrolli's Resume (PDF)">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Icons Row -->
+          <div class="hero-socials">
+            <a href="https://github.com/Preetilk24" target="_blank" rel="noopener noreferrer" class="social-btn"
+              title="GitHub Profile: Preetilk24">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/preetilk/" target="_blank" rel="noopener noreferrer" class="social-btn"
+              title="LinkedIn Profile: preetilk">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="mailto:preetilk32@gmail.com" class="social-btn email-modal-trigger"
+              title="Email: preetilk32@gmail.com" aria-label="Send an email to preetilk32@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Right: Visual Photo Card with PK Initials Fallback -->
+        <div class="hero-visual scale-in in-view">
+          <!-- Main Portrait Avatar Card -->
+          <div class="hero-avatar-frame" id="hero-avatar-frame">
+            <div class="hero-avatar-inner">
+              <!-- Actual image loaded from Images/Pk.jpeg -->
+              <img src="Images/Pk.jpeg" alt="Preeti Kadrolli - Associate Software Engineer" class="hero-profile-img"
+                id="hero-profile-photo" loading="eager" fetchpriority="high"
+                onerror="this.style.display='none'; document.getElementById('hero-avatar-placeholder').style.display='flex';">
+              <!-- Stylish PK Monogram Avatar Fallback -->
+              <div class="hero-avatar-placeholder" id="hero-avatar-placeholder">
+                <div class="avatar-monogram">PK</div>
+                <div class="avatar-caption">Preeti Kadrolli</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 2 — ABOUT ME
+         ========================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Discover My Story</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Dedicated to clean architecture, robust API design, and impactful software
+            engineering.</p>
+        </div>
+
+        <!-- Top Profile & Summary Row -->
+        <div class="about-grid">
+          <!-- Profile Container -->
+          <div class="about-profile-wrap slide-left">
+            <div class="about-avatar-card">
+              <img src="Images/Pk.jpeg" alt="Preeti Kadrolli" class="about-avatar-img" loading="lazy"
+                onerror="this.style.display='none'; document.getElementById('about-avatar-fallback').style.display='flex';">
+              <div class="about-avatar-fallback" id="about-avatar-fallback">
+                <div class="avatar-monogram">PK</div>
+                <div class="avatar-caption">Preeti Kadrolli</div>
+              </div>
+              <!-- Floating Profile Badge -->
+              <div class="about-badge-card">
+                <div class="about-badge-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <div class="about-badge-title">Associate Software Engineer</div>
+                  <div class="about-badge-sub">Solera India</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Summary Text -->
+          <div class="about-summary-box slide-right">
+            <div class="about-summary-text">
+              <p>
+                I am a Computer Science Engineer with professional experience as an
+                <strong>Associate Software Engineer at Solera India Pvt. Ltd.</strong>, where I develop
+                and enhance enterprise-level applications, backend services, RESTful APIs, and full-stack features.
+                My core expertise centers around <strong>C#, .NET Core, ASP.NET Core, React, and SQL Server</strong>,
+                along with hands-on contributions to automotive platform integrations, domain security (SPF/DKIM/DMARC),
+                and automated release management systems that cut release cycles from <strong>two weeks to two
+                  days</strong>.
+              </p>
+
+              <p>
+                I hold a <strong>Bachelor of Engineering in Computer Science (8.4 CGPA)</strong> from S G Balekundri
+                Institute of Technology. Committed to clean architecture and scalable engineering, I continuously expand
+                my capabilities across <strong>Java, Spring Boot, CI/CD automation</strong>, and modern AI technologies
+                including <strong>LLMs, Retrieval-Augmented Generation (RAG), and Model Context Protocol (MCP)</strong>.
+              </p>
+            </div>
+
+            <!-- Key Quick Highlight Badges -->
+            <div class="about-highlights-row">
+              <div class="about-highlight-pill">
+                <span class="highlight-pill-icon">💻</span>
+                <span>Java & .NET Full Stack Developer</span>
+              </div>
+
+              <div class="about-highlight-pill">
+                <span class="highlight-pill-icon">⚡</span>
+                <span>Immediate Joiner</span>
+              </div>
+
+              <div class="about-highlight-pill">
+                <span class="highlight-pill-icon">🎓</span>
+                <span>8.4 CGPA CSE Graduate</span>
+              </div>
+
+              <div class="about-highlight-pill">
+                <span class="highlight-pill-icon">🧠</span>
+                <span>Generative AI & RAG</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission & Vision 3D Cards -->
+        <div class="mission-vision-grid">
+          <!-- Mission Card -->
+          <div class="mv-card flip-in">
+            <div class="mv-header">
+              <div class="mv-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h3 class="mv-title">Mission</h3>
+            </div>
+            <p class="mv-body">
+              "My mission is to build reliable, scalable, and efficient software solutions that solve real-world
+              problems while continuously improving my technical and problem-solving abilities."
+            </p>
+          </div>
+
+          <!-- Vision Card -->
+          <div class="mv-card flip-in" style="transition-delay: 0.2s;">
+            <div class="mv-header">
+              <div class="mv-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </div>
+              <h3 class="mv-title">Vision</h3>
+            </div>
+            <p class="mv-body">
+              "My vision is to grow into a highly skilled software engineer, contribute to impactful technology
+              products, and explore emerging technologies to create meaningful digital experiences."
+            </p>
+          </div>
+        </div>
+
+        <!-- View My Work Quick Navigation -->
+        <div class="view-work-nav fade-up">
+          <div class="view-work-label">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+            Explore My Work:
+          </div>
+          <div class="view-work-buttons">
+            <a href="#experience" class="work-nav-btn">Work Experience</a>
+            <a href="#education" class="work-nav-btn">Education</a>
+            <a href="#projects" class="work-nav-btn">Projects</a>
+            <a href="#skills" class="work-nav-btn">Skills</a>
+            <a href="#certifications" class="work-nav-btn">Certifications</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 3 — WORK EXPERIENCE
+         ========================================================================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Career Milestone</span>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Professional software engineering experience and full-stack internships delivering
+            scalable systems and APIs.</p>
+        </div>
+
+        <div class="timeline-container">
+
+          <!-- Timeline Item 1: Solera India Pvt. Ltd. -->
+          <div class="timeline-item slide-left">
+            <div class="timeline-marker"></div>
+
+            <div class="experience-card exp-main-card">
+              <div class="experience-header">
+                <div class="exp-title-block">
+                  <h3 class="role-title">Associate Software Engineer 1</h3>
+                  <div class="company-name">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    Solera India Pvt. Ltd.
+                  </div>
+                  <div class="location-tag">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Bengaluru, India
+                  </div>
+                </div>
+                <div class="experience-meta">
+                  <span class="badge-duration">June 2025 – September 2026</span>
+                </div>
+              </div>
+
+              <!-- Initial 3 Responsibilities -->
+              <ul class="exp-list">
+                <li class="exp-list-item">Developed and maintained enterprise CRM applications using C#, .NET Core,
+                  ASP.NET Core, JavaScript, React, and SQL.</li>
+                <li class="exp-list-item">Implemented Click-to-Buy integrations and enhancements for Hyundai automotive
+                  platforms in the US and Canada.</li>
+                <li class="exp-list-item">Developed and optimized REST APIs, business services, and SQL stored
+                  procedures to support application integrations and improve performance.</li>
+              </ul>
+
+              <!-- Collapsible Remaining Responsibilities -->
+              <div class="exp-collapsible">
+                <ul class="exp-list exp-list-extended">
+                  <li class="exp-list-item">Implemented email domain authentication validation using SPF, DKIM, and
+                    DMARC, along with Send From and Reply From email workflows.</li>
+                  <li class="exp-list-item">Enhanced reporting and database components to support 30-minute time-zone
+                    offsets and accurate date and time handling.</li>
+                  <li class="exp-list-item">Resolved production issues and supported deployments and releases while
+                    collaborating with Cloud, IT, SCM, DBA, and QA teams in an Agile environment.</li>
+                </ul>
+              </div>
+
+              <!-- Toggle Button -->
+              <button type="button" class="exp-toggle-btn" aria-expanded="false"
+                aria-label="Toggle Solera responsibilities">
+                <span class="btn-text">View More</span>
+                <svg class="toggle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Technology Badges -->
+              <div class="experience-tags">
+                <span class="tech-pill">C#</span>
+                <span class="tech-pill">.NET Core</span>
+                <span class="tech-pill">ASP.NET Core</span>
+                <span class="tech-pill">React</span>
+                <span class="tech-pill">SQL Server</span>
+                <span class="tech-pill">REST APIs</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: TAP Academy -->
+          <div class="timeline-item slide-left">
+            <div class="timeline-marker"></div>
+
+            <div class="experience-card exp-intern-card">
+              <div class="experience-header">
+                <div class="exp-title-block">
+                  <h3 class="role-title">Java Full Stack Web Development Intern</h3>
+                  <div class="company-name">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    TAP Academy
+                  </div>
+                  <div class="location-tag">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Bengaluru, India
+                  </div>
+                </div>
+                <div class="experience-meta">
+                  <span class="badge-duration">July 2024 – April 2025</span>
+                </div>
+              </div>
+
+              <!-- Initial Preview Responsibilities -->
+              <ul class="exp-list">
+                <li class="exp-list-item">Completed hands-on training in Core Java, including OOP, multithreading, and
+                  exception handling.</li>
+                <li class="exp-list-item">Developed Java applications with MySQL database integration and SQL queries.
+                </li>
+              </ul>
+
+              <!-- Collapsible Remaining Responsibilities -->
+              <div class="exp-collapsible">
+                <ul class="exp-list exp-list-extended">
+                  <li class="exp-list-item">Worked on full-stack projects integrating HTML, CSS, JavaScript, Java, and
+                    MySQL.</li>
+                  <li class="exp-list-item">Strengthened debugging, database management, and application development
+                    skills through practical exercises and projects.</li>
+                </ul>
+              </div>
+
+              <!-- Toggle Button -->
+              <button type="button" class="exp-toggle-btn" aria-expanded="false"
+                aria-label="Toggle TAP Academy responsibilities">
+                <span class="btn-text">View More</span>
+                <svg class="toggle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Technology Badges -->
+              <div class="experience-tags">
+                <span class="tech-pill">Core Java</span>
+                <span class="tech-pill">OOP</span>
+                <span class="tech-pill">Multithreading</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">HTML</span>
+                <span class="tech-pill">CSS</span>
+                <span class="tech-pill">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: JFork Technology Services Pvt. Ltd. -->
+          <div class="timeline-item slide-left">
+            <div class="timeline-marker"></div>
+
+            <div class="experience-card exp-intern-card">
+              <div class="experience-header">
+                <div class="exp-title-block">
+                  <h3 class="role-title">Data Analysis Intern</h3>
+                  <div class="company-name">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    JFork Technology Services Pvt. Ltd.
+                  </div>
+                </div>
+                <div class="experience-meta">
+                  <span class="badge-duration">August 2023 – September 2023</span>
+                </div>
+              </div>
+
+              <div class="exp-compact-desc">
+                <p class="exp-preview-text">Completed an internship focused on data analysis, gaining practical exposure
+                  to data handling...</p>
+                <div class="exp-collapsible">
+                  <p class="exp-full-desc">Completed an internship focused on data analysis, gaining practical exposure
+                    to data handling, analysis techniques, and working with datasets.</p>
+                </div>
+              </div>
+
+              <!-- Toggle Button -->
+              <button type="button" class="exp-toggle-btn" aria-expanded="false"
+                aria-label="Toggle JFork internship details">
+                <span class="btn-text">View More</span>
+                <svg class="toggle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Technology Badges -->
+              <div class="experience-tags">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">PowerBi</span>
+                <span class="tech-pill">Excel</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 4: CoachEd -->
+          <div class="timeline-item slide-left">
+            <div class="timeline-marker"></div>
+
+            <div class="experience-card exp-intern-card">
+              <div class="experience-header">
+                <div class="exp-title-block">
+                  <h3 class="role-title">Software Development Intern</h3>
+                  <div class="company-name">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    CoachEd
+                  </div>
+                </div>
+                <div class="experience-meta">
+                  <span class="badge-duration">August 2022 – September 2022</span>
+                </div>
+              </div>
+
+              <div class="exp-compact-desc">
+                <p class="exp-preview-text">Completed a software development internship focused on programming
+                  fundamentals...</p>
+                <div class="exp-collapsible">
+                  <p class="exp-full-desc">Completed a software development internship focused on programming
+                    fundamentals, software development concepts, and practical technical learning.</p>
+                </div>
+              </div>
+
+              <!-- Toggle Button -->
+              <button type="button" class="exp-toggle-btn" aria-expanded="false"
+                aria-label="Toggle CoachEd internship details">
+                <span class="btn-text">View More</span>
+                <svg class="toggle-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                  stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+
+              <!-- Technology Badges -->
+              <div class="experience-tags">
+                <span class="tech-pill">Software Development</span>
+                <span class="tech-pill">Programming Fundamentals</span>
+                <span class="tech-pill">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 4 — EDUCATION
+         ========================================================================== -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Strong academic foundation in computer science, software engineering principles,
+            and data structures.</p>
+        </div>
+
+        <!-- Single outer shadow container box matching Projects card visual theme -->
+        <div class="education-card fade-up">
+          <div class="education-timeline">
+            <!-- Entry 1 -->
+            <div class="edu-timeline-item">
+              <div class="edu-timeline-marker"></div>
+              <div class="edu-timeline-content">
+                <div class="edu-duration">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>2020 – 2024</span>
+                </div>
+                <h3 class="edu-degree">BE Degree in Computer Science</h3>
+                <div class="edu-institution">S G Balekundri Institute of Technology, Belagavi</div>
+                <div class="edu-score">CGPA: 8.4</div>
+              </div>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="edu-timeline-item">
+              <div class="edu-timeline-marker"></div>
+              <div class="edu-timeline-content">
+                <div class="edu-duration">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>2018 – 2020</span>
+                </div>
+                <h3 class="edu-degree">Pre University Education</h3>
+                <div class="edu-institution">Smt. Vidya P Hachinmani College, Dharwad</div>
+                <div class="edu-score">Percentage: 81%</div>
+              </div>
+            </div>
+
+            <!-- Entry 3 -->
+            <div class="edu-timeline-item">
+              <div class="edu-timeline-marker"></div>
+              <div class="edu-timeline-content">
+                <div class="edu-duration">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>2017 – 2018</span>
+                </div>
+                <h3 class="edu-degree">Secondary Education (SSLC)</h3>
+                <div class="edu-institution">Govt. High School, Tadakod (Dharwad)</div>
+                <div class="edu-score">Percentage: 91.2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 5 — PROJECTS
+         ========================================================================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Featured Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Real-world applications delivering measurable speed improvements, system
+            integrations, and resilient architecture.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <div class="project-card scale-in">
+            <div class="project-illustration">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="50" cy="50" r="32" stroke-dasharray="6 6" />
+                <path d="M50 25 L50 50 L68 50" stroke-width="5" />
+                <circle cx="50" cy="50" r="6" fill="currentColor" />
+                <path d="M22 50 L28 44 L28 56 Z" fill="currentColor" />
+                <path d="M78 50 L72 44 L72 56 Z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Enterprise Automation</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-title">Release Management Application</h3>
+            <div class="project-institution">Solera India Pvt. Ltd.</div>
+            <div class="project-desc-wrapper" title="Hover or tap to read full description">
+              <p class="project-description">Developed a release management platform integrating Jira, Jenkins, and
+                GitHub APIs to streamline release workflows and improve deployment efficiency. Reduced release
+                processing time from approximately two weeks to two days.</p>
+              <span class="desc-expand-hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                ASP.NET Core
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                React
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+                SQL Server
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M9 9l6 6M15 9l-6 6" />
+                </svg>
+                Jira API
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 8v4l3 3" />
+                </svg>
+                Jenkins
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                GitHub API
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+                Microsoft SSO
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+                RBAC
+              </span>
+            </div>
+            <div class="project-actions">
+              <span class="project-action-note">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Enterprise Internal Platform
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card scale-in" style="transition-delay: 0.15s;">
+            <div class="project-illustration">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="50" cy="30" r="14" />
+                <circle cx="28" cy="70" r="14" />
+                <circle cx="72" cy="70" r="14" />
+                <line x1="50" y1="44" x2="36" y2="58" />
+                <line x1="50" y1="44" x2="64" y2="58" />
+                <line x1="42" y1="70" x2="58" y2="70" />
+              </svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Backend Architecture</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3 class="project-title">AI Response Scheduling &amp; Messaging</h3>
+            <div class="project-institution">Solera India Pvt. Ltd.</div>
+            <div class="project-desc-wrapper" title="Hover or tap to read full description">
+              <p class="project-description">Worked on configurable AI response modes, scheduling windows, holiday
+                restrictions, fallback behavior, and asynchronous messaging workflows. Improved message scheduling and
+                time-zone handling.</p>
+              <span class="desc-expand-hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                C#
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="2" width="20" height="8" rx="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
+                .NET Core
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                REST APIs
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+                SQL Server
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="23 4 23 10 17 10" />
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+                </svg>
+                Async Processing
+              </span>
+            </div>
+            <div class="project-actions">
+              <span class="project-action-note">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+                Enterprise Internal System
+              </span>
+            </div>
+          </div>
+
+          <!-- Project 3: Online Food Ordering Web Application -->
+          <div class="project-card scale-in" style="transition-delay: 0.2s;">
+            <div class="project-illustration">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M22 66h56c2 0 4-2 4-4 0-18-13-32-32-32s-32 14-32 32c0 2 2 4 4 4z" />
+                <circle cx="50" cy="24" r="5" fill="currentColor" />
+                <line x1="16" y1="74" x2="84" y2="74" stroke-width="4.5" />
+                <path d="M38 48c2-4 7-6 12-6s10 2 12 6" />
+              </svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Full Stack Web App</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Online Food Ordering Web Application</h3>
+            <div class="project-institution">Personal Project</div>
+            <div class="project-desc-wrapper" title="Hover or tap to read full description">
+              <p class="project-description">Developed a responsive online food ordering web application using React.js,
+                HTML, CSS, and JavaScript. Implemented an interactive interface that allows users to browse food
+                categories, explore menu items, and add products to their cart. Integrated MongoDB for managing food
+                items, user information, and order data. Focused on creating a smooth ordering experience with
+                responsive layouts and efficient data handling.</p>
+              <span class="desc-expand-hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+                React.js
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                HTML &amp; CSS
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                JavaScript
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="2" width="20" height="8" rx="2" />
+                  <rect x="2" y="14" width="20" height="8" rx="2" />
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="6" y1="18" x2="6.01" y2="18" />
+                </svg>
+                Node.js
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+                MongoDB
+              </span>
+            </div>
+            <div class="project-actions">
+              <a href="https://online-foodapp.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="project-action-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 4: Java-based E-Commerce Shopping Cart -->
+          <div class="project-card scale-in" style="transition-delay: 0.3s;">
+            <div class="project-illustration">
+              <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="38" cy="74" r="6" fill="currentColor" />
+                <circle cx="70" cy="74" r="6" fill="currentColor" />
+                <path d="M18 24h12l8 34h36l8-26H28" stroke-width="4" />
+                <path d="M44 40h20M54 30v20" />
+              </svg>
+            </div>
+            <div class="project-meta">
+              <span class="project-category-pill">Java &amp; Full Stack</span>
+              <span class="project-year">2024</span>
+            </div>
+            <h3 class="project-title">Java-based E-Commerce Shopping Cart</h3>
+            <div class="project-institution">Personal Project</div>
+            <div class="project-desc-wrapper" title="Hover or tap to read full description">
+              <p class="project-description">Developed a Java-based E-Commerce Shopping Cart application with features
+                for browsing products, managing shopping cart items, and processing orders. Implemented backend
+                functionality using Java and MySQL to manage product information, user accounts, and order data.
+                Optimized database queries for efficient data retrieval and built a responsive frontend using HTML, CSS,
+                and JavaScript to provide a smooth shopping experience.</p>
+              <span class="desc-expand-hint" aria-hidden="true">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </span>
+            </div>
+            <div class="project-tech-tags">
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="6" x2="6.01" y2="6" />
+                  <line x1="10" y1="10" x2="10" y2="4"></line>
+                  <line x1="14" y1="14" x2="14" y2="4"></line>
+                </svg>
+                Java
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+                MySQL
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <rect x="2" y="3" width="20" height="14" rx="2" />
+                  <line x1="8" y1="21" x2="16" y2="21" />
+                  <line x1="12" y1="17" x2="12" y2="21" />
+                </svg>
+                HTML
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+                CSS
+              </span>
+              <span class="tech-pill">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                </svg>
+                JavaScript
+              </span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/Preetilk24/Ecommerce" target="_blank" rel="noopener noreferrer"
+                class="project-action-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                GitHub Repo
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 6 — SKILLS (Technology Chips with PNG Logos)
+         ========================================================================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Technical Mastery</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Technologies and tools I use to build reliable, high-performance software
+            solutions.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- 1. Languages -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">Languages</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/csharp.png" alt="C#" class="tech-logo" />
+                <span class="tech-chip-name">C#</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/java.png" alt="Java" class="tech-logo" />
+                <span class="tech-chip-name">Java</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/javascript.png" alt="JavaScript" class="tech-logo" />
+                <span class="tech-chip-name">JavaScript</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/python.png" alt="Python" class="tech-logo" />
+                <span class="tech-chip-name">Python</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Backend -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">Backend</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/dotnetcore.png" alt=".NET Core" class="tech-logo" />
+                <span class="tech-chip-name">.NET Core</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/aspnetcore.png" alt="ASP.NET Core" class="tech-logo" />
+                <span class="tech-chip-name">ASP.NET Core</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/mvc.png" alt="MVC" class="tech-logo" />
+                <span class="tech-chip-name">MVC</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/restapis.png" alt="REST APIs" class="tech-logo" />
+                <span class="tech-chip-name">REST APIs</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/microservices.png" alt="Microservices" class="tech-logo" />
+                <span class="tech-chip-name">Microservices</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/springboot.png" alt="Spring Boot" class="tech-logo" />
+                <span class="tech-chip-name">Spring Boot</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Frontend -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">Frontend</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/react.png" alt="React" class="tech-logo" />
+                <span class="tech-chip-name">React</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/html.png" alt="HTML" class="tech-logo" />
+                <span class="tech-chip-name">HTML</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/css.png" alt="CSS" class="tech-logo" />
+                <span class="tech-chip-name">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Databases -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">Databases</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/sqlserver.png" alt="SQL Server" class="tech-logo" />
+                <span class="tech-chip-name">SQL Server</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/mysql.png" alt="MySQL" class="tech-logo" />
+                <span class="tech-chip-name">MySQL</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/mongodb.png" alt="MongoDB" class="tech-logo" />
+                <span class="tech-chip-name">MongoDB</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/chromadb.png" alt="ChromaDB" class="tech-logo" />
+                <span class="tech-chip-name">ChromaDB</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/pinecone.png" alt="Pinecone" class="tech-logo" />
+                <span class="tech-chip-name">Pinecone</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. CI/CD -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">CI/CD</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/teamcity.png" alt="TeamCity" class="tech-logo" />
+                <span class="tech-chip-name">TeamCity</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/octopus.png" alt="Octopus Deploy" class="tech-logo" />
+                <span class="tech-chip-name">Octopus Deploy</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/jenkins.png" alt="Jenkins" class="tech-logo" />
+                <span class="tech-chip-name">Jenkins</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Tools -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">Tools</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/git.png" alt="Git" class="tech-logo" />
+                <span class="tech-chip-name">Git</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/github.png" alt="GitHub" class="tech-logo" />
+                <span class="tech-chip-name">GitHub</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/postman.png" alt="Postman" class="tech-logo" />
+                <span class="tech-chip-name">Postman</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/jira.png" alt="Jira" class="tech-logo" />
+                <span class="tech-chip-name">Jira</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/confluence.png" alt="Confluence" class="tech-logo" />
+                <span class="tech-chip-name">Confluence</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/kibana.png" alt="Kibana" class="tech-logo" />
+                <span class="tech-chip-name">Kibana</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/copilot.png" alt="GitHub Copilot" class="tech-logo" />
+                <span class="tech-chip-name">GitHub Copilot</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/agile.png" alt="Agile" class="tech-logo" />
+                <span class="tech-chip-name">Agile</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. AI -->
+          <div class="skill-category-card scale-in">
+            <h3 class="category-card-title">AI</h3>
+            <div class="skills-chips-cloud">
+              <div class="tech-chip">
+                <img src="Images/skills/llms.png" alt="LLMs" class="tech-logo" />
+                <span class="tech-chip-name">LLMs</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/openai.png" alt="OpenAI API" class="tech-logo" />
+                <span class="tech-chip-name">OpenAI API</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/claude.png" alt="Anthropic Claude API" class="tech-logo" />
+                <span class="tech-chip-name">Anthropic Claude API</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/nlp.png" alt="NLP" class="tech-logo" />
+                <span class="tech-chip-name">NLP</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/rag.png" alt="Retrieval-Augmented Generation (RAG)" class="tech-logo" />
+                <span class="tech-chip-name">Retrieval-Augmented Generation (RAG)</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/mcp.png" alt="Model Context Protocol (MCP)" class="tech-logo" />
+                <span class="tech-chip-name">Model Context Protocol (MCP)</span>
+              </div>
+              <div class="tech-chip">
+                <img src="Images/skills/prompteng.png" alt="Prompt Engineering" class="tech-logo" />
+                <span class="tech-chip-name">Prompt Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 7 — CERTIFICATIONS
+         ========================================================================== -->
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Professional Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Continuous learning and professional development.</p>
+        </div>
+
+        <div class="cert-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card scale-in">
+            <div class="cert-image-container">
+              <div class="cert-seal-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cert-name">Java Full Stack Development</h3>
+            <div class="cert-provider">Provider: TAP Academy</div>
+            <span class="cert-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Certificate of Completion
+            </span>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card scale-in" style="transition-delay: 0.15s;">
+            <div class="cert-image-container">
+              <div class="cert-seal-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cert-name">Web Development</h3>
+            <div class="cert-provider">Provider: Udemy</div>
+            <span class="cert-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Certificate of Completion
+            </span>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card scale-in" style="transition-delay: 0.3s;">
+            <div class="cert-image-container">
+              <div class="cert-seal-wrap">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="cert-name">Software Development</h3>
+            <div class="cert-provider">Provider: CoachEd</div>
+            <span class="cert-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              Certificate of Completion
+            </span>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PAGE 8 — CONTACT
+         ========================================================================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header fade-up">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's Connect</h2>
+          <p class="section-subtitle">"Have an interesting opportunity or want to discuss technology? I'd love to hear
+            from you."</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- LEFT COLUMN: Clean White Contact Form -->
+          <div class="contact-form-card slide-left">
+            <h3 class="contact-form-title">Send Me a Message</h3>
+            <p class="contact-form-desc">Fill out the details below to initiate an email conversation directly.</p>
+
+            <form id="contact-form" novalidate>
+              <!-- Full Name -->
+              <div class="form-group">
+                <input type="text" id="contact-name" class="form-control" placeholder=" " required minlength="2">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <div class="input-underline"></div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <input type="email" id="contact-email" class="form-control" placeholder=" " required>
+                <label for="contact-email" class="form-label">Email Address</label>
+                <div class="input-underline"></div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <input type="text" id="contact-subject" class="form-control" placeholder=" " required minlength="3">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <div class="input-underline"></div>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <textarea id="contact-message" class="form-control" placeholder=" " required minlength="5"></textarea>
+                <label for="contact-message" class="form-label">Your Message</label>
+                <div class="input-underline"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="send-btn" class="btn btn-primary btn-shimmer" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-helper-note">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="12" y1="16" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                Note: Submitting prepares an email addressed to preetilk32@gmail.com in your default email client.
+              </div>
+            </form>
+
+            <!-- Form Success Feedback Box -->
+            <div class="form-feedback-success" id="form-feedback-box" style="display: none;">
+              <div class="feedback-badge-success">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h4 class="feedback-title">Message Prepared!</h4>
+              <p class="feedback-desc">
+                We've prepared your email to <strong>preetilk32@gmail.com</strong>. Select your preferred option to
+                send:
+              </p>
+              <div class="feedback-actions">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-feedback-act"
+                  id="feedback-gmail-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>Open in Gmail (Web)</span>
+                </a>
+                <a href="#" class="btn btn-secondary btn-feedback-act" id="feedback-mailto-link">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                  <span>Open in Mail App</span>
+                </a>
+                <button type="button" class="btn btn-secondary btn-feedback-act" id="feedback-copy-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <span id="feedback-copy-text">Copy Message Text</span>
+                </button>
+              </div>
+              <button type="button" class="btn-reset-form" id="btn-reset-form">
+                &larr; Write Another Message
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Dark Contact Information Panel -->
+          <div class="contact-info-panel slide-right">
+            <div class="contact-info-top">
+              <div class="contact-info-header">
+                <h3 class="contact-info-title">Contact Information</h3>
+                <p class="contact-info-sub">Reach out directly via email or connect through professional networks.</p>
+              </div>
+
+              <div class="contact-items-list">
+                <!-- Email Item -->
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <div class="contact-item-label">Email</div>
+                    <a href="mailto:preetilk32@gmail.com" class="contact-item-val email-modal-trigger"
+                      title="Email preetilk32@gmail.com">preetilk32@gmail.com</a>
+                  </div>
+                  <button type="button" class="copy-btn" id="copy-email-btn" title="Copy email address"
+                    aria-label="Copy Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- Location Item -->
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <div class="contact-item-label">Location</div>
+                    <div class="contact-item-val">Bengaluru, Karnataka, India</div>
+                  </div>
+                </div>
+
+                <!-- Work Status / Availability Item -->
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                  </div>
+                  <div class="contact-item-content">
+                    <div class="contact-item-label">Work Status</div>
+                    <div class="contact-item-val contact-status-active">
+                      <span class="hero-badge-dot"></span>
+                      <span>Available for Full-time Roles</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Container: Social Links & Resume Download -->
+            <div class="contact-info-bottom">
+              <div class="contact-social-wrap">
+                <div class="contact-item-label">Connect On Social Media</div>
+                <div class="contact-social-pills">
+                  <a href="https://www.linkedin.com/in/preetilk/" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-pill">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                      <rect x="2" y="9" width="4" height="12"></rect>
+                      <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/Preetilk24" target="_blank" rel="noopener noreferrer"
+                    class="contact-social-pill">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                      </path>
+                    </svg>
+                    GitHub
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-resume-wrap">
+                <a href="/Preeti_Kadrolli_Resume.pdf" download="Preeti_Kadrolli_Resume.pdf"
+                  class="btn btn-secondary btn-resume btn-resume-contact" style="width: 100%;"
+                  title="Download Preeti Kadrolli's Resume (PDF)">
+                  <svg width="18" height="18" viewBox="0 0 24 24 " fill="none" stroke="currentColor" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Download Resume</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">Preeti Kadrolli</div>
+        <p class="footer-tagline">
+          "Building meaningful software, solving real-world problems, and continuously growing as an engineer."
+        </p>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Preetilk24" target="_blank" rel="noopener noreferrer" class="social-btn"
+            title="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+              </path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/preetilk/" target="_blank" rel="noopener noreferrer" class="social-btn"
+            title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="mailto:preetilk32@gmail.com" class="social-btn email-modal-trigger"
+            title="Email preetilk32@gmail.com" aria-label="Send an email to preetilk32@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="current-year"></span> Preeti Kadrolli. All rights reserved.
+        </div>
+        <a href="#hero" class="back-to-top-btn" aria-label="Scroll back to top">
+          Back to Top
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       EMAIL DIRECT CONTACT MODAL
+       ========================================================================== -->
+  <div class="email-modal-overlay" id="email-modal-overlay" aria-hidden="true"></div>
+  <div class="email-modal" id="email-modal" role="dialog" aria-modal="true" aria-labelledby="email-modal-title">
+    <div class="email-modal-header">
+      <div class="email-modal-badge">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+          <polyline points="22,6 12,13 2,6"></polyline>
+        </svg>
+      </div>
+      <div>
+        <h3 class="email-modal-title" id="email-modal-title">Email Preeti Kadrolli</h3>
+        <p class="email-modal-address" id="email-modal-address">preetilk32@gmail.com</p>
+      </div>
+      <button type="button" class="email-modal-close" id="email-modal-close" aria-label="Close dialog">&times;</button>
+    </div>
+
+    <div class="email-modal-body">
+      <p class="email-modal-intro">Choose your preferred method to send an email:</p>
+      <div class="email-modal-options">
+        <!-- Option 1: Gmail Web -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=preetilk32@gmail.com" target="_blank"
+          rel="noopener noreferrer" class="email-modal-opt opt-gmail" id="email-opt-gmail">
+          <div class="email-opt-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="email-opt-text">
+            <strong>Open in Gmail (Web)</strong>
+            <span>Compose directly in browser without email client</span>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="email-opt-arrow">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </a>
+
+
+        <!-- Option 3: Copy to Clipboard -->
+        <button type="button" class="email-modal-opt opt-copy" id="email-opt-copy">
+          <div class="email-opt-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </div>
+          <div class="email-opt-text">
+            <strong id="email-copy-title">Copy Email Address</strong>
+            <span id="email-copy-sub">Copy preetilk32@gmail.com to clipboard</span>
+          </div>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            class="email-opt-arrow">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="email-toast" id="email-toast" role="status" aria-live="polite"></div>
+
+  <!-- External JavaScript Logic -->
+  <script src="js/script.js" defer></script>
+</body>
+
+</html>
